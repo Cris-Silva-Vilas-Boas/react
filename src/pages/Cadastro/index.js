@@ -3,7 +3,6 @@ import api from '../../services/api';
 import { useState } from 'react';
 import Button from '../../components/Button/button';
 import Header from '../../components/Header';
-
 export default function Cadastro(){
     
     const [dragon, setDragon] = useState({
