@@ -44,7 +44,7 @@ return(
     <div>
         <Header />
         <form onSubmit={onSubmit}>
-            <h1>Dragon</h1>
+            <h1>Edition of Dragon</h1>
             <label>
                 Name of dragon:<input name="name" required defaultValue={olDragons.name} onChange={({ target }) => handleDragonInput(target)}/>
             </label>

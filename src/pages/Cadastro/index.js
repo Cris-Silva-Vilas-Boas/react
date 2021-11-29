@@ -3,7 +3,7 @@ import api from '../../services/api';
 import { useState } from 'react';
 import Button from '../../components/Button/button';
 import Header from '../../components/Header';
-export default function Cadastro(){
+export default function Registration(){
     
     const [dragon, setDragon] = useState({
         name: "",
@@ -28,7 +28,7 @@ export default function Cadastro(){
         <div>
             <Header />
             <form onSubmit={onSubmit}>
-                <h1>Dragon</h1>
+                <h1>Registration of dragon</h1>
                 <label>
                     Name of Dragon:<input name="name" required value={dragon.name} onChange={({ target }) => handleDragonInput(target)}/>
                 </label>
