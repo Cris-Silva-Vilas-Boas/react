@@ -1,0 +1,38 @@
+$color-black: black;
+$color_white: white; 
+form input{
+    color: $color-black;
+    background-color: $color-black;
+    border:10px solid $color-black;
+    padding:15px;
+    display: block;
+    width: 400px;
+    
+}
+
+button{
+     background-color: $color-black;
+     color: $color_white;
+     margin: 20px 20px 20px 0px;
+     height: 30px;
+}
+
+h1{
+    margin: 20px 20px 20px 0px; 
+}
+
+div{
+    width: 100%;
+}
+
+@media only screen and (min-width: 401px) and (max-width: 640px) {
+    form, input,h1, div{
+      width: 50%;
+    }
+}
+
+@media only screen and (min-width: 961px) and (max-width: 1280px) {
+  form, input,h1,div{
+    width: 70%;
+  }
+}
