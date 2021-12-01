@@ -3,8 +3,11 @@ import api from '../../services/api';
 import { useState } from 'react';
 import Button from '../../components/Button/button';
 import Header from '../../components/Header';
+import Modal from '../../components/Modal';
+
 export default function Registration(){
     
+    const [modal, setModal] = useState(false);
     const [dragon, setDragon] = useState({
         name: "",
         type: "",
@@ -21,6 +24,7 @@ export default function Registration(){
 
     function onSubmit() {
         api.post('api/v1/dragon', dragon);
+        //setModal(true);
         alert("Registered successfully");
     }
     
@@ -37,7 +41,9 @@ export default function Registration(){
                 </label>
                 <Button name="Cadastrar"/>        
             </form>
-        </div>
+            {modal && (<Modal/>
+      )}
+    </div>
     )
 }
 
