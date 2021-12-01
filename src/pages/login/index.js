@@ -28,16 +28,19 @@ export default function Login(){
     
 
     return(
-        <form onSubmit={onSubmit}>
-            <h1>
-                <label>
-                Email:<input id="email" type="email" required onChange={({ target }) => handleUserInput(target)}/>
-                </label>
-                <label>
-                    Password: <input id="senha" type="password" required onChange={({ target }) => handleUserInput(target)}/>
-                </label>
-                <Button name="Enter"/>   
-            </h1>
-        </form>
+        <div class="login-box">
+            <h2>Login</h2>
+            <form onSubmit={onSubmit}>
+                <div class="user-box">
+                <input id="email" type="email" required onChange={({ target }) => handleUserInput(target)}/>
+                <label>Email</label>
+                </div>
+                <div class="user-box">
+                <input id="senha" type="password" required onChange={({ target }) => handleUserInput(target)}/>
+                <label>Password</label>
+                </div>
+                <Button name="Enter"/>  
+            </form>
+            </div>       
     )
 }
