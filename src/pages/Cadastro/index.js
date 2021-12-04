@@ -4,9 +4,9 @@ import { useState } from 'react';
 import Button from '../../components/Button/button';
 import Header from '../../components/Header';
 import Modal from '../../components/Modal';
+import Title from '../../components/Title';
 
 export default function Registration(){
-    
     const [modal, setModal] = useState(false);
     const [dragon, setDragon] = useState({
         name: "",
@@ -22,26 +22,34 @@ export default function Registration(){
         });
     };
 
-    function onSubmit() {
+    function onSubmit(e) {
         api.post('api/v1/dragon', dragon);
-        //setModal(true);
-        alert("Registered successfully");
+        e.preventDefault();
+        setModal(true);
     }
-    
+
+    function togglePostModal(){
+        setModal(!modal)
+      }
+
     return(
         <div>
-            <Header />
-            <form onSubmit={onSubmit}>
-                <h1>Registration of dragon</h1>
-                <label>
-                    Name of Dragon:<input name="name" required value={dragon.name} onChange={({ target }) => handleDragonInput(target)}/>
-                </label>
-                <label>
-                   Image:<input name="type" required value={dragon.type} onChange={({ target }) => handleDragonInput(target)}/>
-                </label>
-                <Button name="Cadastrar"/>        
-            </form>
-            {modal && (<Modal/>
+            <Header/>          
+              <form onSubmit={onSubmit}>
+                  <Title name ="Cadastrar Dragão"/>
+                  <div class="single-input">
+                      <input type="text" class="input" name="name" required value={dragon.name} onChange={({ target }) => handleDragonInput(target)} />
+                      <label for="nome">nome</label>
+                  </div>
+                  <div class="single-input">
+                      <input type="text" class="input" name="type" required value={dragon.type} onChange={({ target }) => handleDragonInput(target)} />
+                      <label for="tipo">tipo</label>
+                  </div>
+                  <Button name="Cadastrar"/> 
+              </form>
+            {modal && (<Modal
+              close={togglePostModal}
+            />
       )}
     </div>
     )

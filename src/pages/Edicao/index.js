@@ -5,6 +5,7 @@ import { useState , useEffect} from 'react';
 import Button from '../../components/Button/button';
 import Header from '../../components/Header';
 import {useNavigate} from 'react-router-dom';
+import Title from '../../components/Title';
 
 export default function Edicao(){
 
@@ -43,15 +44,15 @@ export default function Edicao(){
 return(
     <div>
         <Header />
-        <form onSubmit={onSubmit}>
-            <h1>Edition of Dragon</h1>
-            <label>
+        <form onSubmit={onSubmit} class="form-box">
+            <Title name="Edit of dragon"></Title>
+            <label class="name-box">
                 Name of dragon:<input name="name" required defaultValue={olDragons.name} onChange={({ target }) => handleDragonInput(target)}/>
             </label>
-            <label>
+            <label class="type-box">
                 Image:<input name="type" required defaultValue={olDragons.type} onChange={({ target }) => handleDragonInput(target)}/>
             </label>
-                <Button name="Cadastrar"/>        
+                <Button name="Salvar"/>        
         </form>
     </div>
     )

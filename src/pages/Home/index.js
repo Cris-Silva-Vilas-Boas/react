@@ -44,34 +44,23 @@ export default function Home() {
     <div>
       <Header />
         {dragons.map((dragon)=>{
-      
           function onClick() {
             api.delete(`api/v1/dragon/${dragon.id}`);
             alert('Successfully deleted');
             window.location.reload();
           } 
-  return(
-    <div class="content">
-      <table class="rTable">
-          <thead>
-            <tr>
-              <td><strong>Name</strong></td>
-              <td><strong>Actions</strong></td>
-            </tr>
-          </thead>
-          <tbody>
-              <tr>
-                <td><strong>{dragon.name}</strong> </td>
-                <td>
-                  <Link input onClick={onClick} to={'/home'}><BiTrash size={25}/></Link>
-                  <Link to={`/dragon/${dragon.id}`}><BiPlus size={25} /></Link>
-                  <Link to={`/edit/dragon/${dragon.id}`}><BiPencil size={25}/></Link>
-                </td>
-              </tr>
-          </tbody>
-        </table>
-      </div>
-        )
+            return(
+              <div id="container">
+              <div className="lista-dragon">
+                    <article key={dragon.id}>
+                        <strong>{dragon.name} </strong>
+                        <Link input onClick={onClick} to={'/home'}><BiTrash size={25}/></Link>
+                        <Link to={`/dragon/${dragon.id}`}><BiPlus size={25} /></Link>
+                        <Link to={`/edit/dragon/${dragon.id}`}><BiPencil size={25}/></Link>
+                    </article> 
+              </div>
+            </div>
+          )
       })}
       <Footer />
   </div>

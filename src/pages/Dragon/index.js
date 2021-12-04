@@ -4,6 +4,8 @@ import { useEffect, useState } from 'react';
 import Header from '../../components/Header';
 import Loader from '../../components/Loader';
 import './dragon.scss';
+import Button from '../../components/Button/button';
+import { Link } from 'react-router-dom';
 
 export default function Dragon(){
     const { id } = useParams();
@@ -28,27 +30,16 @@ export default function Dragon(){
   }
   return(
     <div>
-        <Header />
-        <div class="content">
-          <table class="rTable">
-              <thead>
-                 <tr>
-                  <th>Id</th>
-								  <th>Name</th>
-                  <th>Created at</th>
-								  <th>Type</th>
-                </tr>
-              </thead>
-                <tbody>
-                  <tr>
-                    <td><strong>{dragon.id}</strong> </td>
-                    <td><strong>{dragon.name}</strong> </td>
-                    <td><strong>{dragon.createdAt}</strong> </td>
-                    <td><img src={dragon.type} alt = "Imagem"/></td>
-                  </tr>
-                </tbody>
-            </table>
-      </div>
+      <Header />
+        <div id="container">
+           <div className="lista-dragon">
+              <article key={dragon.id}>
+                <strong>{dragon.name}</strong>
+                <strong>{dragon.createdAt} </strong>
+                <img src={dragon.type} alt={dragon.name} /> 
+              </article> 
+           </div>
+       </div>
   </div>
   )
 }

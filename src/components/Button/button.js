@@ -3,6 +3,6 @@ import './button.css';
 export default function Button(props){
 
     return(
-       <button className = "button">{props.name}</button>
+       <button className = "button button-green">{props.name}</button>
     )
  }

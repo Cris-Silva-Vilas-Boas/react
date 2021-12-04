@@ -1,11 +1,23 @@
 .button {
-    background-color: #189aa3;
+    font-family: arial;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
     border: none;
-    color: white;
-    padding: 20px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px 0px 100px;
+    padding: 25px;
+    border-radius: 10px 10px 10px 10px;
+    cursor: pointer;  
+    margin-left: 30%;
+}
+
+.button-green{
+    background-color: rgb(13, 80, 88);
+    color:#fff;
+    box-shadow: 0 2px 0  #073a49;
+}
+
+.button-green:hover{
+    background-color: rgb(9, 51, 58);
+    color:#fff;
+    box-shadow: 0 2px 0  #0a4242;
 }

@@ -2,6 +2,7 @@ import './login.scss';
 import { useState } from 'react';
 import Button from '../../components/Button/button';
 import {useNavigate} from 'react-router-dom';
+import Title from '../../components/Title';
 
 export default function Login(){
     
@@ -28,19 +29,17 @@ export default function Login(){
     
 
     return(
-        <div class="login-box">
-            <h2>Login</h2>
-            <form onSubmit={onSubmit}>
-                <div class="user-box">
-                <input id="email" type="email" required onChange={({ target }) => handleUserInput(target)}/>
-                <label>Email</label>
+        <form onSubmit={onSubmit}>
+            <Title name = "Login"/>
+                <div class="single-input">
+                    <input type="text" class="input" name="name" required onChange={({ target }) => handleUserInput(target)} />
+                    <label for="email">email</label>
                 </div>
-                <div class="user-box">
-                <input id="senha" type="password" required onChange={({ target }) => handleUserInput(target)}/>
-                <label>Password</label>
+                <div class="single-input">
+                    <input type="text" class="input" required onChange={({ target }) => handleUserInput(target)} />
+                    <label for="senha">senha</label>
                 </div>
-                <Button name="Enter"/>  
-            </form>
-            </div>       
+            <Button name="Entrar"/> 
+        </form>          
     )
 }

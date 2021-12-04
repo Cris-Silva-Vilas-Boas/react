@@ -8,8 +8,8 @@ export default function Header(){
     <header>
         <div class="header">
             <div class="header-right">
-                <Link to="/home" className="menu">DRAGON LIST</Link>
-                <Link to="/api/v1/dragon" className="menu">CREATE AN DRAGON</Link>
+                <Link to="/home" className="menu">Início</Link>
+                <Link to="/api/v1/dragon" className="menu">Criar novo</Link>
             </div>  
       </div>
     </header>
