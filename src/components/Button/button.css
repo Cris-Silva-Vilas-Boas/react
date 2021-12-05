@@ -4,10 +4,13 @@
     text-transform: uppercase;
     font-weight: 700;
     border: none;
-    padding: 25px;
+    padding: 10px;
     border-radius: 10px 10px 10px 10px;
     cursor: pointer;  
-    margin-left: 30%;
+    margin-top: 15%;
+    margin-left: 27%;
+    margin-bottom: 10%;
+    width: 50%;
 }
 
 .button-green{

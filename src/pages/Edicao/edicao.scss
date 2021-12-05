@@ -1,49 +1,38 @@
 $color-black: black;
 $color_white: white; 
 
-.form-box {
+.formedit{
+  width: 400px;
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 440px;
-  height: 400px;
-  padding: 40px;
-  transform: translate(-50%, -50%);
-  background: rgba(20, 97, 58, 0.5);
-  box-sizing: border-box;
-  border-radius: 10px;
+  transform: translate(-50%,-50%);
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  padding: 30px 4%;
 }
 
-
-form input{
-  
-    border:1px solid $color-black;
-    padding:15px;
-    display: block;
-    width: 350px;
-  }
-
-button{
-     margin: 20px 20px 20px 100px;
-     height: 30px;
+.divedit{
+  position: relative;
+  margin: 30px 0;
 }
 
-h1{
-    margin: 100px 100px 50px 0px; 
-}
-
-div{
-    width: 100%;
+.formedit .divedit .inputedit{
+  width: 100%;
+  padding: 5px;
+  border: 0;
+  border-bottom: 2px solid rgb(200,200,200);
+  outline: 0;
+  font-size: 16px;
 }
 
 @media only screen and (min-width: 401px) and (max-width: 640px) {
-    form, input,h1, div{
-      width: 50%;
-    }
+  .formedit, .divedit, .inputedit{
+    width: 50%;
+  }
 }
 
 @media only screen and (min-width: 961px) and (max-width: 1280px) {
-  form, input,h1,div{
-    width: 70%;
+  .formedit, .divedit, .inputedit{
+  width: 70%;
   }
 }

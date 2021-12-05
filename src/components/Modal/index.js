@@ -11,11 +11,6 @@ export default function Modal({close}){
         </button>
         <div>
           <h2>Ação executada com sucesso</h2>
-          <div className="row">
-            <span>
-              
-            </span>
-          </div>
         </div>
       </div>
     </div>

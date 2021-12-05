@@ -1,4 +1,4 @@
-import './login.scss';
+import './login.css';
 import { useState } from 'react';
 import Button from '../../components/Button/button';
 import {useNavigate} from 'react-router-dom';
@@ -29,15 +29,13 @@ export default function Login(){
     
 
     return(
-        <form onSubmit={onSubmit}>
+        <form class="formlogin" onSubmit={onSubmit}>
             <Title name = "Login"/>
-                <div class="single-input">
-                    <input type="text" class="input" name="name" required onChange={({ target }) => handleUserInput(target)} />
-                    <label for="email">email</label>
+                <div class="div-input">
+                    <input type="text" class="inputlogin" placeholder="email@email.com" name="name" required onChange={({ target }) => handleUserInput(target)} />
                 </div>
-                <div class="single-input">
-                    <input type="text" class="input" required onChange={({ target }) => handleUserInput(target)} />
-                    <label for="senha">senha</label>
+                <div class="div-input">
+                    <input type="password" class="inputlogin" placeholder="**********"  required onChange={({ target }) => handleUserInput(target)} />
                 </div>
             <Button name="Entrar"/> 
         </form>          

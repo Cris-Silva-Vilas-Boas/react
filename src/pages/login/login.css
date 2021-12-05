@@ -1,8 +1,5 @@
-$color-black: black;
-$color_white: white; 
-
-.formcadastro{
-  width: 450px;
+.formlogin{
+  width: 400px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -11,28 +8,29 @@ $color_white: white;
   padding: 30px 4%;
 }
 
-.div-cadastro{
+.div-input{
   position: relative;
   margin: 30px 0;
 }
 
-.formcadastro .div-cadastro .inputcadastro{
+.formlogin .div-input .inputlogin{
   width: 100%;
   padding: 5px;
   border: 0;
-  border-bottom: 2px solid rgb(200,200,200);
+  border-bottom: 2px solid rgba(200, 200, 200, 0.767);
   outline: 0;
   font-size: 16px;
 }
 
 @media only screen and (min-width: 401px) and (max-width: 640px) {
-  .formcadastro, .div-cadastro, .inputcadastro{
-    width: 50%;
-  }
+  .formlogin, .div-input, .inputlogin{
+      width: 50%;
+    }
 }
 
 @media only screen and (min-width: 961px) and (max-width: 1280px) {
-  .formcadastro, .div-cadastro, .inputcadastro{
-  width: 70%;
+  .formlogin, .div-input, .inputlogin{
+    width: 70%;
   }
 }
+

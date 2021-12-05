@@ -28,12 +28,13 @@ export default function Dragon(){
         </div>
     )
   }
+  
   return(
     <div>
       <Header />
         <div id="container">
            <div className="lista-dragon">
-              <article key={dragon.id}>
+              <article>
                 <strong>{dragon.name}</strong>
                 <strong>{dragon.createdAt} </strong>
                 <img src={dragon.type} alt={dragon.name} /> 

@@ -30,28 +30,26 @@ export default function Registration(){
 
     function togglePostModal(){
         setModal(!modal)
-      }
+    }
 
     return(
         <div>
             <Header/>          
-              <form onSubmit={onSubmit}>
+              <form class="formcadastro" onSubmit={onSubmit}>
                   <Title name ="Cadastrar Dragão"/>
-                  <div class="single-input">
-                      <input type="text" class="input" name="name" required value={dragon.name} onChange={({ target }) => handleDragonInput(target)} />
-                      <label for="nome">nome</label>
+                  <div class="div-cadastro">
+                      <input type="text" class="inputcadastro" name="name" placeholder="Informe um nome" required value={dragon.name} onChange={({ target }) => handleDragonInput(target)} />
                   </div>
-                  <div class="single-input">
-                      <input type="text" class="input" name="type" required value={dragon.type} onChange={({ target }) => handleDragonInput(target)} />
-                      <label for="tipo">tipo</label>
+                  <div class="div-cadastro">
+                      <input type="text" class="inputcadastro" name="type" placeholder="Informe o endereço de imagens" required value={dragon.type} onChange={({ target }) => handleDragonInput(target)} />
                   </div>
                   <Button name="Cadastrar"/> 
               </form>
             {modal && (<Modal
               close={togglePostModal}
             />
-      )}
-    </div>
+        )}
+      </div>
     )
 }
 
