@@ -24,7 +24,7 @@ export default function Dragon(){
   if(loading){
     return(
         <div>
-              <Loader name = "Loading..."/>;  
+              <Loader name = "Carregando...."/>;  
         </div>
     )
   }

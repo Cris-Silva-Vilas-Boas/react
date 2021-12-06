@@ -1,8 +1,10 @@
 
+$color-green:rgb(17, 141, 120);
+
 .lista-dragon img{
     text-decoration: none;
     color: #FFF;
-    background-color: rgb(17, 141, 120);
+    background-color: $color-green;
     font-size: 25px;
     width: 100%;
     text-align: center;

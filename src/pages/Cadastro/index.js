@@ -5,8 +5,10 @@ import Button from '../../components/Button/button';
 import Header from '../../components/Header';
 import Modal from '../../components/Modal';
 import Title from '../../components/Title';
+import { useNavigate } from 'react-router';
 
 export default function Registration(){
+    const navigate = useNavigate();
     const [modal, setModal] = useState(false);
     const [dragon, setDragon] = useState({
         name: "",
@@ -29,7 +31,8 @@ export default function Registration(){
     }
 
     function togglePostModal(){
-        setModal(!modal)
+        setModal(!modal);
+        navigate('/home');
     }
 
     return(

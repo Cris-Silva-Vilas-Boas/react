@@ -1,5 +1,5 @@
 $color-black: black;
-$color_white: white; 
+$color-gray: rgb(200,200,200); 
 
 .formcadastro{
   width: 450px;
@@ -7,7 +7,7 @@ $color_white: white;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  box-shadow: 0 0 5px $color-black;
   padding: 30px 4%;
 }
 
@@ -20,14 +20,20 @@ $color_white: white;
   width: 100%;
   padding: 5px;
   border: 0;
-  border-bottom: 2px solid rgb(200,200,200);
+  border-bottom: 2px solid $color-gray;
   outline: 0;
   font-size: 16px;
 }
 
 @media only screen and (min-width: 401px) and (max-width: 640px) {
   .formcadastro, .div-cadastro, .inputcadastro{
-    width: 50%;
+    width: 40%;
+  }
+}
+
+@media only screen and (min-width: 641px) and (max-width: 960px) {
+  .formcadastro, .div-cadastro, .inputcadastro{
+    width: 40%;
   }
 }
 

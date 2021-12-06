@@ -1,8 +1,12 @@
+$color-green :rgb(17, 141, 120);
+$color-gray: #f7eeee;
+$align-center: center;
+
 #container{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: $align-center;
+    align-items: $align-center;
     width: 35%;
     margin-left: 32%;
   }
@@ -13,37 +17,43 @@
 
   .lista-dragon{
     margin:15px;
-  }
-  
-  .lista-dragon article{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #f7eeee;
-    margin: 15px;
-    padding: 15px;
-    border-radius: 5px;
-  }
-  
-  .lista-dragon strong{
-    padding-bottom: 15px;
-    font-size: 22px;
-  }
-  
-  .lista-dragon article a{
-    text-decoration: none;
-    color: #FFF;
-    background-color: rgb(17, 141, 120);
-    font-size: 25px;
-    width: 100%;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+
+    article{
+      display: flex;
+      flex-direction: column;
+      justify-content: $align-center;
+      align-items: $align-center;
+      background-color: $color-gray;
+      margin: 15px;
+      padding: 15px;
+      border-radius: 5px;
+    }
+
+    strong{
+      padding-bottom: 15px;
+      font-size: 22px;
+    }
+
+    a{
+      text-decoration: none;
+      color: $color-gray;
+      background-color: $color-green;
+      font-size: 25px;
+      width: 100%;
+      text-align: $align-center;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }  
   }
 
  
 @media only screen and (min-width: 401px) and (max-width: 640px) {
+  .lista-dragon, div{
+      width: 40%;
+    }
+}
+
+@media only screen and (min-width: 641px) and (max-width: 960px) {
   .lista-dragon, div{
       width: 50%;
     }
