@@ -4,7 +4,7 @@ import Dragon from '../pages/Dragon';
 import Cadastro from '../pages/Registration';
 import Edicao from '../pages/Edit';
 import Login  from '../pages/Login';
-import Error from '../pages/Error';
+import Error from '../pages/NotFound';
 
 const Rotas = () => {
 

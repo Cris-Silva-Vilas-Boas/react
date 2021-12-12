@@ -1,4 +1,4 @@
-import './error.css';
+import './notfound.css';
 import { Link } from 'react-router-dom';
 
 export default function Error(){
