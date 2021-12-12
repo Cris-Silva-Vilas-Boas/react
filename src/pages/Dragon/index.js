@@ -4,8 +4,7 @@ import { useEffect, useState } from 'react';
 import Header from '../../components/Header';
 import Loader from '../../components/Loader';
 import './dragon.scss';
-import Button from '../../components/Button/button';
-import { Link } from 'react-router-dom';
+import { format , parseISO} from 'date-fns';
 
 export default function Dragon(){
     const { id } = useParams();
@@ -28,16 +27,18 @@ export default function Dragon(){
         </div>
     )
   }
+
   
+
   return(
     <div>
       <Header />
-        <div id="container">
-           <div className="lista-dragon">
+        <div id="containerDragon">
+           <div className="lista-dragon-unit">
               <article>
                 <strong>{dragon.name}</strong>
-                <strong>{dragon.createdAt} </strong>
-                <img src={dragon.type} alt={dragon.name} /> 
+                <strong>{dragon.createdAt}</strong>
+                <strong>{dragon.type}</strong>
               </article> 
            </div>
        </div>

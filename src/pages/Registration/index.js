@@ -1,4 +1,4 @@
-import './cadastro.scss';
+import './registration.scss';
 import api from '../../services/api';
 import { useState } from 'react';
 import Button from '../../components/Button/button';
@@ -44,7 +44,7 @@ export default function Registration(){
                       <input type="text" class="inputcadastro" name="name" placeholder="Informe um nome" required value={dragon.name} onChange={({ target }) => handleDragonInput(target)} />
                   </div>
                   <div class="div-cadastro">
-                      <input type="text" class="inputcadastro" name="type" placeholder="Informe o endereço de imagens" required value={dragon.type} onChange={({ target }) => handleDragonInput(target)} />
+                      <input type="text" class="inputcadastro" name="type" placeholder="Informe o tipo" required value={dragon.type} onChange={({ target }) => handleDragonInput(target)} />
                   </div>
                   <Button name="Cadastrar"/> 
               </form>

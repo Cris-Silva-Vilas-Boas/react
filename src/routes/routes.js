@@ -1,8 +1,8 @@
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import Home from '../pages/Home';
 import Dragon from '../pages/Dragon';
-import Cadastro from '../pages/Cadastro';
-import Edicao from '../pages/Edicao';
+import Cadastro from '../pages/Registration';
+import Edicao from '../pages/Edit';
 import Login  from '../pages/Login';
 import Error from '../pages/Error';
 

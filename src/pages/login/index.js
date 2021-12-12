@@ -9,7 +9,7 @@ export default function Login(){
     const navigate = useNavigate();
 
     const [user, setUser] = useState({
-        nameUser: "",
+        email: "",
         password: "",
     });
 
@@ -32,7 +32,7 @@ export default function Login(){
         <form class="formlogin" onSubmit={onSubmit}>
             <Title name = "Login"/>
                 <div class="div-input">
-                    <input type="text" class="inputlogin" placeholder="email@email.com" name="name" required onChange={({ target }) => handleUserInput(target)} />
+                    <input type="text" class="inputlogin"  placeholder="email@email.com" name="name" required onChange={({ target }) => handleUserInput(target)} />
                 </div>
                 <div class="div-input">
                     <input type="password" class="inputlogin" placeholder="**********"  required onChange={({ target }) => handleUserInput(target)} />

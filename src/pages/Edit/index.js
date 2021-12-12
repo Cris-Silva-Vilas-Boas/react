@@ -1,4 +1,4 @@
-import './edicao.scss';
+import './edit.scss';
 import { useParams } from 'react-router-dom';
 import api from '../../services/api';
 import { useState , useEffect} from 'react';
@@ -8,10 +8,9 @@ import {useNavigate} from 'react-router-dom';
 import Title from '../../components/Title';
 import Modal from '../../components/Modal';
 
-export default function Edicao(){
-
-  const [modal, setModal] = useState(false);
+export default function Edit(){
   const navigate = useNavigate();
+  const [modal, setModal] = useState(false);
   const { id } = useParams();
   const [olDragons, oldSetDragons] = useState([]);
 
@@ -28,23 +27,24 @@ export default function Edicao(){
     type: "",
   });
 
- const handleDragonInput = ({ name, value }) => {
-    setDragon((dragon) => {
-    return {
-        ...olDragons,
-        [name]: value,
-    };
-    });
- };
-
- function onSubmit(e) {
+  function onSubmit(e) {
     api.put(`api/v1/dragon/${id}`, dragon);
     e.preventDefault();
     setModal(true);
  }
 
+ const handleDragonInput = ({ name, value }) => {
+    setDragon(() => {
+        return {
+            ...olDragons,
+            [name]: value,
+        };
+    });
+ };
+
  function togglePostModal(){
-    setModal(!modal)
+    setModal(!modal);
+    navigate('/home');
  }
 
 return(

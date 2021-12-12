@@ -1,7 +1,7 @@
 import { useEffect, useState} from 'react';
 import './home.scss';
 import api from '../../services/api';
-import { Link , useNavigate} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import {BiTrash, BiPencil, BiPlus} from 'react-icons/bi';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
@@ -13,7 +13,6 @@ export default function Home() {
   const [dragons, setDragons] = useState([]);
   const [loading, setLoading] = useState(true);
   const [modal, setModal] = useState(false);
-  const navigate = useNavigate();
 
   useEffect(()=>{
     async function loadDragons(){
@@ -27,9 +26,9 @@ export default function Home() {
 
   if(loading){
     return(
-        <div>
-              <Loader name = "Carregando...."/>;  
-        </div>
+      <div>
+        <Loader name = "Carregando...."/>;  
+      </div>
     )
   }
 
@@ -41,7 +40,7 @@ export default function Home() {
         return 1;
       }
       return 0;
-    })
+  })
   
   function togglePostModal(){
       setModal(!modal)
