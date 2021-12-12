@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import Header from '../../components/Header';
 import Loader from '../../components/Loader';
 import './dragon.scss';
-import { format , parseISO} from 'date-fns';
+import {format, parseISO} from 'date-fns';
 
 export default function Dragon(){
     const { id } = useParams();
@@ -28,7 +28,14 @@ export default function Dragon(){
     )
   }
 
-  
+ //const date = parseISO(dragon.createdAt, 'dd-MM-yyyy HH:mm:ss');
+ //const formatedDate = format(date, 'dd-MM-yyyy');
+ //console.log(formatedDate);
+ 
+ function formatDate(date){
+    const dateParse = parseISO(date, 'dd-MM-yyyy HH:mm:ss');
+    return format(dateParse, 'dd-MM-yyyy');
+ }
 
   return(
     <div>
@@ -37,7 +44,7 @@ export default function Dragon(){
            <div className="lista-dragon-unit">
               <article>
                 <strong>{dragon.name}</strong>
-                <strong>{dragon.createdAt}</strong>
+                <strong>{formatDate(dragon.createdAt)}</strong>
                 <strong>{dragon.type}</strong>
               </article> 
            </div>
