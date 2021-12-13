@@ -27,19 +27,19 @@ $color-gray:rgba(200, 200, 200, 0.767);
 
 @media only screen and (min-width: 401px) and (max-width: 640px) {
   .formlogin, .div-input, .inputlogin{
-      width: 50%;
+      width: 300px;
     }
 }
 
 @media only screen and (min-width: 641px) and (max-width: 960px) {
   .formlogin, .div-input, .inputlogin{
-    width: 70%;
+    width: 500px;
   }
 }
 
 @media only screen and (min-width: 961px) and (max-width: 1280px) {
   .formlogin, .div-input, .inputlogin{
-    width: 70%;
+    width: 700px;
   }
 }
 

@@ -27,7 +27,7 @@ export default function Home() {
   if(loading){
     return(
       <div>
-        <Loader name = "Carregando...."/>;  
+        <Loader/>;  
       </div>
     )
   }
@@ -43,7 +43,7 @@ export default function Home() {
   })
   
   function togglePostModal(){
-      setModal(!modal)
+      setModal(!modal);
       window.location.reload();
   }
 
@@ -69,7 +69,7 @@ export default function Home() {
             </div>
           )
       })}
-       {modal && (<Modal close={togglePostModal} />)}
+       {modal && (<Modal close={togglePostModal}/>)}
       <Footer />
   </div>
   )

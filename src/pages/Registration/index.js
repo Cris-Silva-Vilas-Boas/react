@@ -8,6 +8,7 @@ import Title from '../../components/Title';
 import { useNavigate } from 'react-router';
 
 export default function Registration(){
+
     const navigate = useNavigate();
     const [modal, setModal] = useState(false);
     const [dragon, setDragon] = useState({
@@ -17,10 +18,10 @@ export default function Registration(){
     
     const handleDragonInput = ({ name, value }) => {
         setDragon((dragon) => {
-        return {
-            ...dragon,
-            [name]: value,
-        };
+            return {
+                ...dragon,
+                [name]: value,
+            };
         });
     };
 
@@ -48,9 +49,7 @@ export default function Registration(){
                   </div>
                   <Button name="Cadastrar"/> 
               </form>
-            {modal && (<Modal
-              close={togglePostModal}
-            />
+            {modal && (<Modal close={togglePostModal}/>
         )}
       </div>
     )

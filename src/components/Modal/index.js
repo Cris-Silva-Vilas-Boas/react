@@ -5,12 +5,12 @@ export default function Modal({close}){
   return(
     <div className="modal">
       <div className="container">
-      <button className="close" onClick={ close }>
+      <button className="close" onClick={close}>
           <FiX size={23} color="#FFF" />
           Voltar
         </button>
         <div>
-          <h2>Ação executada com sucesso</h2>
+          <h2>Ação realizada com sucesso</h2>
         </div>
       </div>
     </div>

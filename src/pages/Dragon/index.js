@@ -23,14 +23,10 @@ export default function Dragon(){
   if(loading){
     return(
         <div>
-              <Loader name = "Carregando...."/>;  
+              <Loader/>;  
         </div>
     )
   }
-
- //const date = parseISO(dragon.createdAt, 'dd-MM-yyyy HH:mm:ss');
- //const formatedDate = format(date, 'dd-MM-yyyy');
- //console.log(formatedDate);
  
  function formatDate(date){
     const dateParse = parseISO(date, 'dd-MM-yyyy HH:mm:ss');
