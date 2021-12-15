@@ -1,5 +1,5 @@
-export default function Loader(){
+export default function Loader(props){
     return(
-        <div class = "spinner black"></div>
+        <div>{props.name}</div>
     )
 }
