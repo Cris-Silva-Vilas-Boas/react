@@ -3,6 +3,7 @@ import { useState } from 'react';
 import Button from '../../components/Button/button';
 import {useNavigate} from 'react-router-dom';
 import Title from '../../components/Title';
+import TitlePage from '../../components/TitlePage';
 
 export default function Login(){
     
@@ -30,6 +31,7 @@ export default function Login(){
 
     return(
         <form class="formlogin" onSubmit={onSubmit}>
+            <TitlePage name = "Login"/>
             <Title name = "Login"/>
                 <div class="div-input">
                     <input type="text" class="inputlogin"  placeholder="email@email.com" name="name" required onChange={({ target }) => handleUserInput(target)} />

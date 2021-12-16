@@ -6,6 +6,7 @@ import Header from '../../components/Header';
 import Modal from '../../components/Modal';
 import Title from '../../components/Title';
 import { useNavigate } from 'react-router';
+import TitlePage from '../../components/TitlePage';
 
 export default function Registration(){
 
@@ -38,7 +39,8 @@ export default function Registration(){
 
     return(
         <div>
-            <Header/>          
+            <Header/>
+            <TitlePage name ="Cadastro"/>          
               <form class="formcadastro" onSubmit={onSubmit}>
                   <Title name ="Cadastrar Dragão"/>
                   <div class="div-cadastro">

@@ -7,6 +7,7 @@ import Header from '../../components/Header';
 import {useNavigate} from 'react-router-dom';
 import Title from '../../components/Title';
 import Modal from '../../components/Modal';
+import TitlePage from '../../components/TitlePage';
 
 export default function Edit(){
   const navigate = useNavigate();
@@ -50,6 +51,7 @@ export default function Edit(){
 return(
     <div>
         <Header />
+        <TitlePage name ="Edição"/>
         <form class = "formedit" onSubmit={onSubmit}>
                   <Title name ="Editar Dragão"/>
                   <div class="divedit">

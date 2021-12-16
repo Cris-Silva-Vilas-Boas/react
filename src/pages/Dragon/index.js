@@ -5,6 +5,7 @@ import Header from '../../components/Header';
 import Loader from '../../components/Loader';
 import './dragon.scss';
 import {format, parseISO} from 'date-fns';
+import TitlePage from '../../components/TitlePage';
 
 export default function Dragon(){
     const { id } = useParams();
@@ -36,6 +37,7 @@ export default function Dragon(){
   return(
     <div>
       <Header />
+      <TitlePage name = "Detalhes"/>
         <div id="containerDragon">
            <div className="lista-dragon-unit">
               <article>

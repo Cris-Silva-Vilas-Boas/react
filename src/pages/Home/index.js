@@ -7,6 +7,7 @@ import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import Loader from '../../components/Loader';
 import Modal from '../../components/Modal';
+import TitlePage from '../../components/TitlePage';
 
 export default function Home() {
   
@@ -50,6 +51,7 @@ export default function Home() {
   return (
     <div>
       <Header />
+      <TitlePage name = "Home"/>
         {dragons.map((dragon)=>{
 
           function onClick() {
