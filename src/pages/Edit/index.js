@@ -60,7 +60,7 @@ return(
                   </div>
                   <Button name="Salvar"/> 
         </form>
-        {modal && (<Modal close={togglePostModal}/>)}
+        {modal && (<Modal close={togglePostModal} name ="Editado com sucesso"/>)}
     </div>
     )
 }

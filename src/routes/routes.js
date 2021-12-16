@@ -3,7 +3,7 @@ import Home from '../pages/Home';
 import Dragon from '../pages/Dragon';
 import Cadastro from '../pages/Registration';
 import Edicao from '../pages/Edit';
-import Login  from '../pages/Login';
+import Login  from '../pages/login';
 import Error from '../pages/NotFound';
 
 const Rotas = () => {
