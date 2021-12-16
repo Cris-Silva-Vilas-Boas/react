@@ -69,7 +69,7 @@ export default function Home() {
             </div>
           )
       })}
-       {modal && (<Modal close={togglePostModal}/>)}
+       {modal && (<Modal close={togglePostModal} name="Excluído com sucesso"/>)}
       <Footer />
   </div>
   )

@@ -49,7 +49,7 @@ export default function Registration(){
                   </div>
                   <Button name="Cadastrar"/> 
               </form>
-            {modal && (<Modal close={togglePostModal}/>
+            {modal && (<Modal close={togglePostModal} name ="Cadastrado com sucesso"/>
         )}
       </div>
     )
