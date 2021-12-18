@@ -1,4 +1,4 @@
-## Tabela de Conteúdo
+## Conteúdos
 
 - [Tabela de Conteúdo](#tabela-de-conte%C3%BAdo)
 - [Sobre o Projeto](#sobre-o-projeto)
@@ -8,7 +8,7 @@
 
 ## Sobre o Projeto
 
-Este projeto tem objetivo colocar em prática os estudos realizados de react.
+Este projeto tem como objetivo colocar em prática os estudos realizados de react.
 
 ### Feito Com
 
@@ -22,7 +22,7 @@ Para desenvolver o projeto foi utilizado:
 ## Instalação
 - npm install
 - npm start
-- 
+
 ### Estrutura de Arquivos
 
 A estrutura de arquivos está da seguinte maneira:
