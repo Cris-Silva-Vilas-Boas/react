@@ -28,7 +28,7 @@ export default function Home() {
   if(loading){
     return(
       <div>
-        <Loader name="carregando..."/>;  
+        <Loader/>;  
       </div>
     )
   }

@@ -1,5 +1,6 @@
-export default function Loader(props){
+import './loader.css';
+export default function Loader(){
     return(
-        <div>{props.name}</div>
+        <h1 class="loader black"></h1>
     )
 }
