@@ -35,7 +35,7 @@ export default function Edit(){
  }
 
  const handleDragonInput = ({ name, value }) => {
-    setDragon(() => {
+    setDragon((olDragons) => {
         return {
             ...olDragons,
             [name]: value,
@@ -46,7 +46,7 @@ export default function Edit(){
  function togglePostModal(){
     setModal(!modal);
     navigate('/home');
- }
+}
 
 return(
     <div>
