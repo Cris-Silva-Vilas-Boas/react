@@ -34,12 +34,45 @@ A estrutura de arquivos está da seguinte maneira:
 │   │   └── Button
 │   │       └── index.js
 │   │       └── button.css
-│   ├── Pages/
-│   │   ├── rocketseat_logo_roxa.png
-│   │   └── rocketseat_logo.png
-│   ├── Routes/
-│   │   └── Main/
+│   │   └── Footer
 │   │       └── index.js
+│   │       └── footer.css
+│   │   └── Header
+│   │       └── index.js
+│   │       └── header.css
+│   │   └── Modal
+│   │       └── index.js
+│   │       └── modal.css
+│   │   └── Title
+│   │       └── index.js
+│   │       └── title.css
+│   │   └── TitlePage
+│   │       └── index.js
+│   │       └── titlePage.css
+│   │   └── Loader
+│   │       └── index.js
+│   │       └── loader.css
+│   ├── Pages/
+│   │   └── Dragon
+│   │       └── index.js
+│   │       └── dragon.css
+│   │   └── Edit
+│   │       └── index.js
+│   │       └── edit.css
+│   │   └── Home
+│   │       └── index.js
+│   │       └── home.css
+│   │   └── Login
+│   │       └── index.js
+│   │       └── login.css
+│   │   └── NotFound
+│   │       └── index.js
+│   │       └── notfound.css
+│   │   └── Registration
+│   │       └── index.js
+│   │       └── registration.css
+│   ├── Routes/
+│   │   └── routes/
 │   ├── services/
 │   │   └── api.js
 ├── .gitignore
