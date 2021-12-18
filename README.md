@@ -28,29 +28,20 @@ A estrutura de arquivos está da seguinte maneira:
 A estrutura de arquivos está da seguinte maneira:
 
 ```bash
-rocketseat-basic
+
 ├── src/
-│   ├── config/
+│   ├── Components/
 │   │   └── ReactotronConfig.js
-│   ├── images/
+│   ├── Pages/
 │   │   ├── rocketseat_logo_roxa.png
 │   │   └── rocketseat_logo.png
-│   ├── pages/
+│   ├── Routes/
 │   │   └── Main/
 │   │       └── index.js
 │   ├── services/
 │   │   └── api.js
-│   ├── index.js
-│   └── routes.js
-├── .editorconfig
-├── .eslintrc.json
 ├── .gitignore
-├── babel.config.js
-├── dependencies.json
-├── devDependencies.json
 ├── index.js
-├── jsconfig.js
-├── LICENSE
 ├── package.json
 └── README.md
 
