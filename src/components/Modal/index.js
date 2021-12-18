@@ -1,7 +1,7 @@
 import './modal.css';
 import { FiX } from 'react-icons/fi';
 
-export default function Modal({close}, props){
+export default function Modal({close, name}){
   return(
     <div className="modal">
       <div className="container">
@@ -10,7 +10,7 @@ export default function Modal({close}, props){
           Voltar
         </button>
         <div>
-          <h2>{props.name}</h2>
+          <h2>{name}</h2>
         </div>
       </div>
     </div>
