@@ -18,11 +18,11 @@ Para desenvolver o projeto foi utilizado:
 - [React Router](https://reactrouter.com/) 
 - [Axios](https://github.com/axios/axios) 
 - [Date fns](https://date-fns.org/)
+
+## Instalação
+- npm install
+- npm start
 - 
-### Estrutura de Arquivos
-
-A estrutura de arquivos está da seguinte maneira:
-
 ### Estrutura de Arquivos
 
 A estrutura de arquivos está da seguinte maneira:
@@ -79,8 +79,3 @@ A estrutura de arquivos está da seguinte maneira:
 ├── index.js
 ├── package.json
 └── README.md
-
-## Instalação
-- npm install
-- npm start
-
