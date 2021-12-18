@@ -59,7 +59,7 @@ export default function Home() {
               setModal(true);
           } 
             return(
-              <div id="container">
+              <div id="containerdragon">
               <div class="lista-dragon">
                     <article>
                         <strong>{dragon.name} </strong>

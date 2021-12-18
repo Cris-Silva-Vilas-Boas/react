@@ -38,7 +38,7 @@ export default function Dragon(){
     <div>
       <Header />
       <TitlePage name = "Detalhes"/>
-        <div id="containerDragon">
+        <div id="containerDetail">
            <div className="lista-dragon-unit">
               <article>
                 <strong>{dragon.name}</strong>

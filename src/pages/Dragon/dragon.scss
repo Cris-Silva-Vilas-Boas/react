@@ -1,12 +1,12 @@
 $color-green:rgb(17, 141, 120);
 $align-center: center;
 
-#containerDragon{
+#containerDetail{
   display: flex;
   flex-direction: column;
   justify-content: $align-center;
   align-items: $align-center;
-  width: 35%;
+  width:60%;
   margin-left: 32%;
   margin-top: 5%;
   background-color:#dfebec;
@@ -44,20 +44,20 @@ $align-center: center;
 }
 
 @media only screen and (max-width: 400px) {
-  #container{
+  #containerDetail{
      width: 30%;
   }
 }
 
 @media only screen and (min-width: 401px) and (max-width: 960px) {
-   #container{
-    width: 60%;
-    margin-left: 20%;
+   #containerDetail{
+    width:50%;
  }
 }
 
 @media only screen and (min-width: 961px) {
-  #container{
-    width: 100%;
-}
+    #containerDetail{
+      width: 30%;
+      margin-left: 33%;
+  }
 }

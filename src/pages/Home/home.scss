@@ -2,13 +2,13 @@ $color-green :rgb(17, 141, 120);
 $color-gray: #f7eeee;
 $align-center: center;
 
-#container{
+#containerdragon{
     display: flex;
     flex-direction: column;
     justify-content: $align-center;
     align-items: $align-center;
-    width: 20%;
-    margin-left: 40%;
+    width: 60%;
+    margin-left: 30%;
   }
   
   div{
@@ -47,20 +47,20 @@ $align-center: center;
   } 
 
 @media only screen and (max-width: 400px) {
-    #container{
+    #containerdragon{
        width: 30%;
     }
 }
 
 @media only screen and (min-width: 401px) and (max-width: 960px) {
-     #container{
-      width: 60%;
-      margin-left: 20%;
+     #containerdragon{
+      width:50%;
    }
 }
 
 @media only screen and (min-width: 961px) {
-    #container{
-      width: 100%;
+    #containerdragon{
+      width: 28%;
+      margin-left: 35%;
   }
 }
