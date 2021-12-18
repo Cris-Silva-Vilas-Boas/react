@@ -18,6 +18,9 @@ Para desenvolver o projeto foi utilizado:
 - [React Router](https://reactrouter.com/) 
 - [Axios](https://github.com/axios/axios) 
 - [Date fns](https://date-fns.org/)
-- 
 
+
+## Execução do projeto
+- npm install
+- npm start
 
