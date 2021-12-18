@@ -9,3 +9,15 @@
 ## Sobre o Projeto
 
 Este projeto tem objetivo colocar em prática os estudos realizados de react.
+
+### Feito Com
+
+Para desenvolver o projeto foi utilizado: 
+
+- [React Native](https://pt-br.reactjs.org/) 
+- [React Router](https://reactrouter.com/) 
+- [Axios](https://github.com/axios/axios) 
+- [Date fns](https://date-fns.org/)
+- 
+
+
