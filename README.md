@@ -80,7 +80,7 @@ A estrutura de arquivos está da seguinte maneira:
 ├── package.json
 └── README.md
 
-### Instalação
+## Instalação
 - npm install
 - npm start
 
