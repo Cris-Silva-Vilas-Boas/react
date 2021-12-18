@@ -18,9 +18,38 @@ Para desenvolver o projeto foi utilizado:
 - [React Router](https://reactrouter.com/) 
 - [Axios](https://github.com/axios/axios) 
 - [Date fns](https://date-fns.org/)
+- 
+### Estrutura de Arquivos
 
+A estrutura de arquivos está da seguinte maneira:
 
-## Execução do projeto
+├── src/
+│   ├── components/
+│   │   └── Button
+│   │        └── index.js
+│   │        └── button.css
+│   │   └── Footer
+│   │        └── index.js
+│   │        └── footer.css
+│   │   └── Header
+│   │        └── index.js
+│   │        └── header.css
+│   ├── pages/
+│   │   ├── rocketseat_logo_roxa.png
+│   │   └── rocketseat_logo.png
+│   ├── routes/
+│   │   └── Main/
+│   │       └── index.js
+│   ├── services/
+│   │   └── api.js
+│  
+├── app.js
+├── index.js
+├── .gitignore
+├── package.json
+└── README.md
+
+### Instalação
 - npm install
 - npm start
 
