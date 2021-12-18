@@ -23,29 +23,34 @@ Para desenvolver o projeto foi utilizado:
 
 A estrutura de arquivos está da seguinte maneira:
 
+### Estrutura de Arquivos
+
+A estrutura de arquivos está da seguinte maneira:
+
+```bash
+rocketseat-basic
 ├── src/
-│   ├── components/
-│   │   └── Button
-│   │        └── index.js
-│   │        └── button.css
-│   │   └── Footer
-│   │        └── index.js
-│   │        └── footer.css
-│   │   └── Header
-│   │        └── index.js
-│   │        └── header.css
-│   ├── pages/
+│   ├── config/
+│   │   └── ReactotronConfig.js
+│   ├── images/
 │   │   ├── rocketseat_logo_roxa.png
 │   │   └── rocketseat_logo.png
-│   ├── routes/
+│   ├── pages/
 │   │   └── Main/
 │   │       └── index.js
 │   ├── services/
 │   │   └── api.js
-│  
-├── app.js
-├── index.js
+│   ├── index.js
+│   └── routes.js
+├── .editorconfig
+├── .eslintrc.json
 ├── .gitignore
+├── babel.config.js
+├── dependencies.json
+├── devDependencies.json
+├── index.js
+├── jsconfig.js
+├── LICENSE
 ├── package.json
 └── README.md
 
