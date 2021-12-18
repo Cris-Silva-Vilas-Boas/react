@@ -14,7 +14,7 @@ Este projeto tem como objetivo colocar em prática os estudos realizados de reac
 
 Para desenvolver o projeto foi utilizado: 
 
-- [React Native](https://pt-br.reactjs.org/) 
+- [React JS](https://pt-br.reactjs.org/) 
 - [React Router](https://reactrouter.com/) 
 - [Axios](https://github.com/axios/axios) 
 - [Date fns](https://date-fns.org/)
