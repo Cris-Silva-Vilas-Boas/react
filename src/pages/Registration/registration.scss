@@ -25,20 +25,20 @@ $color-gray: rgb(200,200,200);
   font-size: 16px;
 }
 
-@media only screen and (min-width: 401px) and (max-width: 640px) {
-  .formcadastro, .div-cadastro, .inputcadastro{
-    width: 30%;
-  }
-}
-
-@media only screen and (min-width: 641px) and (max-width: 960px) {
-  .formcadastro, .div-cadastro, .inputcadastro{
+@media only screen and (max-width: 400px) {
+  .formcadastro{
     width: 50%;
   }
 }
 
-@media only screen and (min-width: 961px) and (max-width: 1280px) {
-  .formcadastro, .div-cadastro, .inputcadastro{
-  width: 50%;
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    .formcadastro{
+      width: 70%;
+  }
+}
+
+@media only screen and (min-width: 961px) {
+    .formcadastro{
+      width: 100%;
   }
 }

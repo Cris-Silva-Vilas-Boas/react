@@ -25,23 +25,22 @@ $color-gray:rgba(200, 200, 200, 0.767);
   font-size: 16px;
 }
 
-@media only screen and (min-width: 401px) and (max-width: 640px) {
-  .formlogin, .div-input, .inputlogin{
-      width: 300px;
+@media only screen and (max-width: 400px) {
+    .formlogin{
+      width: 50%;
     }
 }
 
-@media only screen and (min-width: 641px) and (max-width: 960px) {
-  .formlogin, .div-input, .inputlogin{
-    width: 500px;
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    .formlogin{
+      width: 70%;
   }
 }
 
-@media only screen and (min-width: 961px) and (max-width: 1280px) {
-  .formlogin, .div-input, .inputlogin{
-    width: 700px;
+  @media only screen and (min-width: 961px) {
+    .formlogin{
+      width: 100%;
   }
 }
-
 
 

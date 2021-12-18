@@ -44,23 +44,23 @@ $align-center: center;
       padding-top: 10px;
       padding-bottom: 10px;
     }  
-  }
+  } 
 
- 
-@media only screen and (min-width: 401px) and (max-width: 640px) {
-  .lista-dragon, div{
-      width: 40%;
+@media only screen and (max-width: 400px) {
+    #container{
+       width: 30%;
     }
 }
 
-@media only screen and (min-width: 641px) and (max-width: 960px) {
-  .lista-dragon, div{
-      width: 50%;
-    }
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+     #container{
+      width: 60%;
+      margin-left: 20%;
+   }
 }
 
-@media only screen and (min-width: 961px) and (max-width: 1280px) {
-  .lista-dragon, div{
-    width: 70%;
+@media only screen and (min-width: 961px) {
+    #container{
+      width: 100%;
   }
 }
