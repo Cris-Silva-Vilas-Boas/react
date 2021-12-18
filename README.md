@@ -31,7 +31,9 @@ A estrutura de arquivos está da seguinte maneira:
 
 ├── src/
 │   ├── Components/
-│   │   └── ReactotronConfig.js
+│   │   └── Button
+│   │       └── index.js
+│   │       └── button.css
 │   ├── Pages/
 │   │   ├── rocketseat_logo_roxa.png
 │   │   └── rocketseat_logo.png
