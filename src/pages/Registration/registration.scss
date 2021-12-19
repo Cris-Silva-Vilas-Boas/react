@@ -4,7 +4,7 @@ $color-gray: rgb(200,200,200);
 .formcadastro{
   width: 30%;
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%,-50%);
   box-shadow: 0 0 5px $color-black;
@@ -27,7 +27,7 @@ $color-gray: rgb(200,200,200);
 
 @media only screen and (max-width: 400px) {
   .formcadastro{
-    width: 50%;
+    width: 85%;
   }
 }
 
@@ -39,6 +39,6 @@ $color-gray: rgb(200,200,200);
 
 @media only screen and (min-width: 961px) {
     .formcadastro{
-      width: 30%;
+      width: 35%;
   }
 }

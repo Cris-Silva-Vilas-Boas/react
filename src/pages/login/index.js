@@ -28,7 +28,6 @@ export default function Login(){
         navigate('/home');
     }
     
-
     return(
         <form class="formlogin" onSubmit={onSubmit}>
             <TitlePage name = "Login"/>

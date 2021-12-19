@@ -7,13 +7,11 @@
   margin-top: 20%;
   border-top-color: gray;
   animation: spin 1s linear infinite;
+  .black{
+    border-color : #808080;
+    border-top-color:black;
+  }
 }
-
-.loader .black{
-  border-color : #808080;
-  border-top-color:black;
-}
-
 
 @keyframes spin{
   to{

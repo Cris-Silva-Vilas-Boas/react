@@ -58,6 +58,7 @@ export default function Home() {
               api.delete(`api/v1/dragon/${dragon.id}`);
               setModal(true);
           } 
+
             return(
               <div id="containerdragon">
               <div class="lista-dragon">
