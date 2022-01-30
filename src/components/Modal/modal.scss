@@ -44,28 +44,43 @@
 
   @media only screen and (max-width: 400px){
       .container-modal, button{
-        max-width: 50%;
-        font-size: 7px;
+        max-width: 100%;
+        font-size: 8px;
+        height: 23%;
     }
     .close{
-      left: 10px;
-      margin-top: -50px;
+      left: 10%;
+      margin-top: -20%;
     }
   }
   
-  @media only screen and (min-width: 401px) and (max-width: 960px) {
+  @media only screen and (min-width: 401px) and (max-width: 539px) {
     .container-modal{
-        max-width: 80%;
+        max-width: 93%;
         font-size: 12px;
-        height: 20%;
+        height: 25%;
     }
     .close{
-      left: 200px;
-      margin-top: -50px;
+      left: 10%;
+      margin-top: 3%;
     }
   }
   
-  @media only screen and (min-width: 961px) {
+
+  @media only screen and (min-width: 540px) and (max-width: 960px) {
+    .container-modal{
+        max-width: 93%;
+        font-size: 12px;
+        height: 25%;
+    }
+    .close{
+      left: 5%;
+      margin-top: -4%;
+    }
+  }
+  
+
+  @media only screen and (min-width: 961px ) and (max-width: 1023px) {
       .container-modal{
         max-width: 30%;
         height: 20%;
@@ -76,3 +91,15 @@
       margin-top: -10%;
     }
   }  
+
+  @media only screen and (min-width: 1024px ) and (max-width: 2048px) {
+    .container-modal{
+      max-width: 35%;
+      height: 35%;
+      font-size: 12px;
+  }
+  .close{
+    left: 9%;
+    margin-top: -3%;
+  }
+}  
